@@ -56,14 +56,11 @@ jobs:
         
         
     - name: Create Project
-      run: cordova create werm com.cypherpunkarmoury.werm werm
+      run: cordova create werm com.carmoury.werm Werm
 
     - name: Add Platform
       run: (cd werm; cordova platform add android)
 
-    - name: Zip Current Folder for Bkp
-      run: (cd werm; cordova plugin add https://github.com/CypherpunkArmoury/cordova-werm.git)
-      
       
     - name: Zip Current Folder for Bkp
       run: (cd werm; zip -r ../CodeBackup.zip *)
